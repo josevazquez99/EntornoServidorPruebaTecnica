@@ -3,31 +3,29 @@ package com.vedruna.pruebaTecnica.dto;
 public class CountryDTO {
 
     private String country;
-    private int population;
-
-
+    private Long population;
 
     public CountryDTO() {
     }
 
-    public CountryDTO(String country, int population) {
+    public CountryDTO(String country, Long population) {
         this.country = country;
         this.population = population;
     }
 
-    public String getCountry() {            
+    public String getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(String country) {        
         this.country = country;
     }
 
-    public int getPopulation() {
+    public Long getPopulation() {
         return population;
     }
 
-    public void setPopulation(int population) {        
+    public void setPopulation(Long population) {        
         this.population = population;
     }
 }

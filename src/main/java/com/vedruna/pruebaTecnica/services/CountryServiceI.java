@@ -1,11 +1,12 @@
 package com.vedruna.pruebaTecnica.services;
 
 import com.vedruna.pruebaTecnica.dto.CountryDTO;
-
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 public interface CountryServiceI {
 
-    CountryDTO[] searchAllCountries();
-    //CartDTO[] searchCarts();
+    Page<CountryDTO> searchAllCountries(Pageable pageable);
+       //CartDTO[] searchCarts();
 
-    String addCountry(CountryDTO c);
+    String addCountry();
 }
